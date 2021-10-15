@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaaBuscador", "SistemaaBuscador\SistemaaBuscador.csproj", "{72428727-91A8-49F7-90AA-E73E563AA4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaaBuscadorTest", "SistemaaBuscadorTest\SistemaaBuscadorTest.csproj", "{DF64EB5B-B9FE-49F4-B9F7-29DBDAA4F3CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72428727-91A8-49F7-90AA-E73E563AA4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72428727-91A8-49F7-90AA-E73E563AA4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72428727-91A8-49F7-90AA-E73E563AA4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72428727-91A8-49F7-90AA-E73E563AA4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF64EB5B-B9FE-49F4-B9F7-29DBDAA4F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF64EB5B-B9FE-49F4-B9F7-29DBDAA4F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF64EB5B-B9FE-49F4-B9F7-29DBDAA4F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF64EB5B-B9FE-49F4-B9F7-29DBDAA4F3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E44AE1A-F7A4-479C-AA0F-857F9E351F40}
+	EndGlobalSection
+EndGlobal
