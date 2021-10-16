@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SistemaaBuscador.Models;
-using SistemaaBuscador.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -28,22 +26,11 @@ namespace SistemaaBuscador.Controllers
         [HttpPost]
         public IActionResult Login(LoginViewModel model)
         {
-            var repo = new LoginRepository();
-            if (ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
-                if (repo.UserExist(model.Usuario, model.Password))
-                {
-                    Guid sessionId = Guid.NewGuid();
-                    HttpContext.Session.SetString("sessionId", sessionId.ToString());
-                    Response.Cookies.Append("sessionId", sessionId.ToString());
-                    return View("Privacy");
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "El usuario o contraseña no es valido");
-                }
+                return View("Index", model);
             }
-            return View("Index", model);
+            return View("Privacy");
         }
 
         public IActionResult Privacy()
