@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FsCheck;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace SistemaaBuscador.Models
         [Required(ErrorMessage ="El campo {0} es requerido")]
         public string Usuario { get; set; }
         [Display(Name="Contraseña")]
-        [Required(ErrorMessage ="El campo {0} es requerido")]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         public string Password { get; set; }
     }
 }
